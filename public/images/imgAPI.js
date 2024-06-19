@@ -28,6 +28,7 @@ const imgAPI = {
     'https://via.placeholder.com/640x425/c4cdff/757575',
   ],
   agency: [
+    // header , parallax style
     'https://via.placeholder.com/964x723/1071ef/FFFFFF',
     '/images/aboutus.png',
     // '/images/logos/VeronaLogo.png',

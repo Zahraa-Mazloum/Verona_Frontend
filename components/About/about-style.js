@@ -69,9 +69,10 @@ const useStyles = makeStyles({ uniqId: 'about' })((theme) => ({
   pieceSmallBottom: {
     width: 100,
     height: 100,
-    borderRadius: 24,
+    borderRadius: 0,
     top: 90,
-    left: 90
+    left: 90,
+
   },
   subTtl: {
     fontSize: 22,

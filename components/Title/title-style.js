@@ -50,7 +50,7 @@ const titleStyles = makeStyles({ uniqId: 'title' })((theme, _params, classes) =>
       width: 120,
       position: 'relative',
       textTransform: 'capitalize',
-      fontSize: 48,
+      fontSize: 45,
       fontWeight: 700,
       lineHeight: '62px',
       [theme.breakpoints.up('lg')]: {

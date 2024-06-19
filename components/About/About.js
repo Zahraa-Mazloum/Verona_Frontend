@@ -6,7 +6,7 @@ import { useTranslation } from 'next-i18next';
 import { useText } from 'theme/common';
 // import Typewriter from 'typewriter-effect';
 
-import TitleDeco from '../Title/WithDecoration';
+import TitleDeco from '../Title/abtWithDecoration';
 import useStyles from './about-style';
 import useTitle from '../Title/title-style';
 import Counter from '../Counter';
@@ -28,7 +28,7 @@ function About() {
           </Grid>
           <Grid item md={7} xs={12}>
             <Typography className={cx(title.default, text.subtitle, classes.subTtl)} variant="p">
-            {t('agency-landing.about_subtitle')}
+              {t('agency-landing.about_subtitle')}
 
               {/* <Typewriter
                 options={{

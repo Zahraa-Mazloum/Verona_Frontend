@@ -66,7 +66,7 @@ const parallaxStyles = makeStyles({ uniqId: 'parallax' })((theme, _params, class
     background: theme.palette.secondary.main,
     width: 205,
     height: 205,
-    opacity: 0.1,
+    opacity: 0.2,
     borderRadius: 40,
   },
   parallaxSecondarySingle: {
