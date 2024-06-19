@@ -1,0 +1,11 @@
+.banner_title{
+    color:#743410;
+    font-size: clamp(60px, 4vw, 80px) !important;
+    text-transform: uppercase;
+}
+
+.Bsubtitle{
+    font-size: clamp(20px, 4vw, 50px) !important;
+    padding-top: 5%;
+
+}
