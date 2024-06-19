@@ -46,7 +46,7 @@ const titleStyles = makeStyles({ uniqId: 'title' })((theme, _params, classes) =>
     position: 'relative',
     '& h3': {
       fontFamily: 'Roboto Condensed',
-      color: 'black',
+      color: '#743410',
       width: 150,
       position: 'relative',
       textTransform: 'capitalize',
