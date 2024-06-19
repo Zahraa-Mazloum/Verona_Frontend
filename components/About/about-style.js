@@ -25,14 +25,15 @@ const useStyles = makeStyles({ uniqId: 'about' })((theme) => ({
     },
     '& .MuiContainer-root': {
       [theme.breakpoints.up('sm')]: {
-        padding: 0
+        // paddingTop: '10%',
+        // background: 'red',
       }
     }
   },
   puzzle: {
     position: 'relative',
     left: 60,
-    top: -40,
+    top: -70,
     '& > div': {
       transform: 'rotate(45deg)',
       overflow: 'hidden',
