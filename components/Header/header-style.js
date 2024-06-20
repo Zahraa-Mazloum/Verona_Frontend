@@ -120,11 +120,15 @@ const headerStyles = makeStyles({ uniqId: 'header' })((theme, _params, classes) 
     justifyContent: 'space-between',
     '& nav': {
       alignItems: 'center',
-      padding: theme.spacing(2),
+      // padding: theme.spacing(2),
+      paddingTop: '2%',
       display: 'flex',
       [theme.breakpoints.down('sm')]: {
         padding: theme.spacing(2, 0),
       },
+      // '& ul': {
+      //   background: 'blue',
+      // }
     }
   },
   logo: {
@@ -194,7 +198,7 @@ const headerStyles = makeStyles({ uniqId: 'header' })((theme, _params, classes) 
           background: 'none !important',
           boxShadow: 'none',
           position: 'relative',
-          padding: '6px',
+          padding: '0px',
           margin: theme.spacing(0, 1),
           minWidth: 0,
           '&:after': {
