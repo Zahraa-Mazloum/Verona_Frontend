@@ -73,8 +73,8 @@ const headerStyles = makeStyles({ uniqId: 'header' })((theme, _params, classes) 
           color: theme.palette.text.primary,
         },
         '& img': {
-          height: 32,
-          width: 32,
+          height: 40,
+          width: 100,
         }
       },
       [`& .${classes.bar}`]: {
@@ -128,20 +128,9 @@ const headerStyles = makeStyles({ uniqId: 'header' })((theme, _params, classes) 
     }
   },
   logo: {
-    '& a': {
-      textDecoration: 'none',
-      display: 'flex',
-      fontSize: 22,
-      color: theme.palette.text.primary,
-      alignItems: 'center',
-      fontWeight: 500,
-      [theme.breakpoints.down('md')]: {
-        color: theme.palette.common.white
-      }
-    },
     '& img': {
       transition: 'all 0.3s ease-out',
-      width: 48,
+      width: 150,
       height: 48,
       marginRight: theme.spacing(),
       [theme.breakpoints.only('md')]: {

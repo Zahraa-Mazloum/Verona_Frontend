@@ -10,8 +10,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Scrollspy from 'react-scrollspy';
 import { useTranslation } from 'next-i18next';
 import logo from 'public/images/logos/VeronaLogo.png';
-// import logo from 'public/images/Vlogo.svg';
-import brand from 'public/text/brand';
+// import brand from 'public/text/brand';
 import routeLink from 'public/text/link';
 import Settings from './Settings';
 import MobileMenu from './MobileMenu';
@@ -109,12 +108,10 @@ function Header(props) {
                 {invert ? (
                   <Link href={routeLink.agency.home}>
                     <img src={logo} alt="logo" />
-                    {brand.agency.name}
                   </Link>
                 ) : (
                   <AnchorLink href="#home">
                     <img src={logo} alt="logo" />
-                    {brand.agency.name}
                   </AnchorLink>
                 )}
               </div>
