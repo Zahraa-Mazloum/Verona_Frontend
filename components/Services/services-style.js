@@ -95,12 +95,12 @@ const useStyles = makeStyles({ uniqId: 'services' })((theme, _params, classes) =
     paddingTop: '10%',
     paddingRight: '25%',
     [theme.breakpoints.down('sm')]: {
-      fontSize: 18,
-      width: '80%',
+      fontSize: 16,
+      width: '100%',
     },
     [theme.breakpoints.down('md')]: {
-      fontSize: 18,
-      width: '80%',
+      fontSize: 16,
+      width: '100%',
     },
   }
 }));
