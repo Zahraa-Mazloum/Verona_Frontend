@@ -88,12 +88,12 @@ const useStyles = makeStyles({ uniqId: 'services' })((theme, _params, classes) =
   //   objectFit: 'cover',
   visionDesc: {
     margin: '0 auto',
-    width: '75%',
+    width: '90%',
     textAlign: 'justify',
-    fontWeight: 450,
-    fontSize: 20,
+    fontWeight: 350,
+    fontSize: 16,
     paddingTop: '10%',
-    paddingRight: '25%',
+    paddingRight: '43%',
     [theme.breakpoints.down('sm')]: {
       fontSize: 16,
       width: '100%',
