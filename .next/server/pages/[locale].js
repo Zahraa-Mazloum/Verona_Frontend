@@ -2542,7 +2542,15 @@ const useStyles = (0,mui_.makeStyles)({
     fontWeight: 500,
     fontSize: 26,
     paddingTop: '10%',
-    paddingRight: '25%'
+    paddingRight: '25%',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: 18,
+      width: '80%'
+    },
+    [theme.breakpoints.down('md')]: {
+      fontSize: 18,
+      width: '80%'
+    }
   }
 }));
 /* harmony default export */ const services_style = (useStyles);

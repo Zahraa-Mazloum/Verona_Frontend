@@ -1,4 +1,4 @@
-import {lighten, darken } from '@mui/material/styles';
+import { lighten, darken } from '@mui/material/styles';
 import { makeStyles } from 'tss-react/mui';
 
 const useStyles = makeStyles({ uniqId: 'services' })((theme, _params, classes) => ({
@@ -93,7 +93,15 @@ const useStyles = makeStyles({ uniqId: 'services' })((theme, _params, classes) =
     fontWeight: 500,
     fontSize: 26,
     paddingTop: '10%',
-    paddingRight: '25%'
+    paddingRight: '25%',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: 18,
+      width: '80%',
+    },
+    [theme.breakpoints.down('md')]: {
+      fontSize: 18,
+      width: '80%',
+    },
   }
 }));
 
