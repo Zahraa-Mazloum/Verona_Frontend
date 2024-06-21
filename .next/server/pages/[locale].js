@@ -84,7 +84,7 @@ const titleStyles = (0,mui_.makeStyles)({
     position: 'relative',
     '& h3': {
       fontFamily: 'Roboto Condensed',
-      color: '#743410',
+      color: 'black',
       width: 150,
       position: 'relative',
       textTransform: 'capitalize',
@@ -119,7 +119,7 @@ const titleStyles = (0,mui_.makeStyles)({
       content: '""',
       width: 210,
       height: 210,
-      background: 'rgba(255, 165, 0, 0.5)',
+      background: 'rgba(255, 255,255, 0.5)',
       borderRadius: 24,
       transform: 'rotate(45deg)',
       position: 'absolute',
@@ -679,20 +679,16 @@ function CallAction() {
           children: /*#__PURE__*/(0,jsx_runtime_.jsxs)((Grid_default()), {
             container: true,
             alignItems: "center",
-            children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)((Grid_default()), {
+            children: [/*#__PURE__*/jsx_runtime_.jsx((Grid_default()), {
               item: true,
               md: 9,
               xs: 12,
-              children: [/*#__PURE__*/jsx_runtime_.jsx((Typography_default()), {
+              children: /*#__PURE__*/jsx_runtime_.jsx((Typography_default()), {
                 variant: "h4",
                 gutterBottom: true,
                 display: "block",
                 children: t('agency-landing.cta_title')
-              }), /*#__PURE__*/jsx_runtime_.jsx((Typography_default()), {
-                display: "block",
-                component: "div",
-                children: t('agency-landing.cta_subtitle')
-              })]
+              })
             }), /*#__PURE__*/jsx_runtime_.jsx((Grid_default()), {
               item: true,
               md: 3,
@@ -1869,7 +1865,7 @@ function MapAdress() {
 
 /***/ }),
 
-/***/ 4934:
+/***/ 7551:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1888,9 +1884,9 @@ var external_react_anchor_link_smooth_scroll_default = /*#__PURE__*/__webpack_re
 // EXTERNAL MODULE: external "react-scrollspy"
 var external_react_scrollspy_ = __webpack_require__(6578);
 var external_react_scrollspy_default = /*#__PURE__*/__webpack_require__.n(external_react_scrollspy_);
-// EXTERNAL MODULE: external "@mui/material/Fab"
-var Fab_ = __webpack_require__(3661);
-var Fab_default = /*#__PURE__*/__webpack_require__.n(Fab_);
+;// CONCATENATED MODULE: external "@mui/material/Fab"
+const Fab_namespaceObject = require("@mui/material/Fab");
+var Fab_default = /*#__PURE__*/__webpack_require__.n(Fab_namespaceObject);
 ;// CONCATENATED MODULE: external "@mui/icons-material/ArrowUpward"
 const ArrowUpward_namespaceObject = require("@mui/icons-material/ArrowUpward");
 var ArrowUpward_default = /*#__PURE__*/__webpack_require__.n(ArrowUpward_namespaceObject);
@@ -2114,6 +2110,48 @@ function PageNav() {
 
 /***/ }),
 
+/***/ 8130:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (/* binding */ SingleSquare)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6689);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_scroll_parallax__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7446);
+/* harmony import */ var react_scroll_parallax__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_scroll_parallax__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _parallax_style__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(628);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+function SingleSquare() {
+  const {
+    classes,
+    cx
+  } = (0,_parallax_style__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z)();
+  return /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx("div", {
+    className: classes.parallaxWrap,
+    children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx(react_scroll_parallax__WEBPACK_IMPORTED_MODULE_1__.ParallaxProvider, {
+      children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx("div", {
+        className: cx(classes.testi, classes.innerParallax),
+        children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx(react_scroll_parallax__WEBPACK_IMPORTED_MODULE_1__.Parallax, {
+          translateY: [10, 30],
+          className: "figure",
+          children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx("div", {
+            className: cx(classes.parallaxSquare, classes.parallaxSecondarySingle)
+          })
+        })
+      })
+    })
+  });
+}
+
+/***/ }),
+
 /***/ 7670:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -2232,11 +2270,12 @@ const parallaxStyles = (0,tss_react_mui__WEBPACK_IMPORTED_MODULE_0__.makeStyles)
     }
   },
   parallaxPrimary: {
-    background: `url(${public_images_imgAPI__WEBPACK_IMPORTED_MODULE_1__/* ["default"].agency[1] */ .Z.agency[1]}) no-repeat center center`,
-    width: 405,
-    height: 405,
+    background: `url(${public_images_imgAPI__WEBPACK_IMPORTED_MODULE_1__/* ["default"].agency[1] */ .Z.agency[1]}) no-repeat`,
+    width: 500,
+    height: 500,
     // opacity: 0.08,
-    borderRadius: 80
+    borderRadius: 80,
+    paddingBottom: '5%'
   },
   parallaxSecondary: {
     background: theme.palette.secondary.main,
@@ -2295,42 +2334,101 @@ const parallaxStyles = (0,tss_react_mui__WEBPACK_IMPORTED_MODULE_0__.makeStyles)
 
 /***/ }),
 
-/***/ 6594:
+/***/ 4599:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "Z": () => (/* reexport */ components_Services_Services)
+  "Z": () => (/* reexport */ Services_Services)
 });
 
 // EXTERNAL MODULE: external "react"
 var external_react_ = __webpack_require__(6689);
-// EXTERNAL MODULE: external "@mui/material/useMediaQuery"
-var useMediaQuery_ = __webpack_require__(9868);
-var useMediaQuery_default = /*#__PURE__*/__webpack_require__.n(useMediaQuery_);
-// EXTERNAL MODULE: external "@mui/material/styles"
-var styles_ = __webpack_require__(8442);
-// EXTERNAL MODULE: external "@mui/material/Container"
-var Container_ = __webpack_require__(4475);
-var Container_default = /*#__PURE__*/__webpack_require__.n(Container_);
-// EXTERNAL MODULE: external "@mui/material/Fab"
-var Fab_ = __webpack_require__(3661);
-var Fab_default = /*#__PURE__*/__webpack_require__.n(Fab_);
-// EXTERNAL MODULE: external "react-slick"
-var external_react_slick_ = __webpack_require__(8096);
-var external_react_slick_default = /*#__PURE__*/__webpack_require__.n(external_react_slick_);
-;// CONCATENATED MODULE: external "@mui/icons-material/ArrowBack"
-const ArrowBack_namespaceObject = require("@mui/icons-material/ArrowBack");
-var ArrowBack_default = /*#__PURE__*/__webpack_require__.n(ArrowBack_namespaceObject);
-;// CONCATENATED MODULE: external "@mui/icons-material/ArrowForward"
-const ArrowForward_namespaceObject = require("@mui/icons-material/ArrowForward");
-var ArrowForward_default = /*#__PURE__*/__webpack_require__.n(ArrowForward_namespaceObject);
-// EXTERNAL MODULE: external "next-i18next"
-var external_next_i18next_ = __webpack_require__(1377);
+;// CONCATENATED MODULE: external "react-multi-carousel"
+const external_react_multi_carousel_namespaceObject = require("react-multi-carousel");
+var external_react_multi_carousel_default = /*#__PURE__*/__webpack_require__.n(external_react_multi_carousel_namespaceObject);
+// EXTERNAL MODULE: external "react/jsx-runtime"
+var jsx_runtime_ = __webpack_require__(997);
+;// CONCATENATED MODULE: ./components/AutoPlayCarousel.js
+// AutoPlayCarousel.js
+
+
+
+
+const responsive = {
+  superLargeDesktop: {
+    breakpoint: {
+      max: 4000,
+      min: 3000
+    },
+    items: 5
+  },
+  desktop: {
+    breakpoint: {
+      max: 3000,
+      min: 1024
+    },
+    items: 4
+  },
+  tablet: {
+    breakpoint: {
+      max: 1024,
+      min: 464
+    },
+    items: 2
+  },
+  mobile: {
+    breakpoint: {
+      max: 464,
+      min: 0
+    },
+    items: 1
+  }
+};
+
+const AutoPlayCarousel = ({
+  items
+}) => /*#__PURE__*/jsx_runtime_.jsx((external_react_multi_carousel_default()), {
+  responsive: responsive,
+  autoPlay: true,
+  autoPlaySpeed: 3000,
+  infinite: true,
+  arrows: false,
+  ssr: true,
+  children: items.map((item, index) => /*#__PURE__*/jsx_runtime_.jsx("div", {
+    className: "slidesImg",
+    children: /*#__PURE__*/jsx_runtime_.jsx("img", {
+      src: item.image,
+      alt: `Item ${index + 1}`,
+      width: 450,
+      height: 300,
+      className: "carouselCardImg",
+      style: {
+        verticalAlign: 'middle'
+      }
+    })
+  }, index))
+});
+
+/* harmony default export */ const components_AutoPlayCarousel = (AutoPlayCarousel);
 // EXTERNAL MODULE: ./public/images/imgAPI.js
 var imgAPI = __webpack_require__(5967);
+// EXTERNAL MODULE: external "next-i18next"
+var external_next_i18next_ = __webpack_require__(1377);
+// EXTERNAL MODULE: ./theme/common.js
+var common = __webpack_require__(4486);
+;// CONCATENATED MODULE: external "@mui/icons-material/BarChart"
+const BarChart_namespaceObject = require("@mui/icons-material/BarChart");
+var BarChart_default = /*#__PURE__*/__webpack_require__.n(BarChart_namespaceObject);
+// EXTERNAL MODULE: external "@mui/material/Grid"
+var Grid_ = __webpack_require__(5612);
+// EXTERNAL MODULE: external "@mui/material/Typography"
+var Typography_ = __webpack_require__(7163);
+var Typography_default = /*#__PURE__*/__webpack_require__.n(Typography_);
+// EXTERNAL MODULE: external "@mui/material/styles"
+var styles_ = __webpack_require__(8442);
 // EXTERNAL MODULE: external "tss-react/mui"
 var mui_ = __webpack_require__(6508);
 ;// CONCATENATED MODULE: ./components/Services/services-style.js
@@ -2340,43 +2438,47 @@ const useStyles = (0,mui_.makeStyles)({
   uniqId: 'services'
 })((theme, _params, classes) => ({
   root: {
-    background: theme.palette.mode === 'dark' ? (0,styles_.alpha)(theme.palette.primary.dark, 0.4) : (0,styles_.lighten)(theme.palette.primary.light, 0.8),
-    padding: theme.spacing(10, 0),
-    position: 'relative',
-    [theme.breakpoints.down('lg')]: {
-      padding: theme.spacing(15, 0, 10)
-    }
-  },
-  title: {},
-  carouselHandle: {
-    height: 380,
-    position: 'relative',
-    zIndex: 10
-  },
-  carouselWrap: {
-    position: 'absolute',
-    zIndex: 2,
     width: '100%',
-    overflow: 'hidden'
-  },
-  item: {
-    '&:focus': {
-      outline: 'none'
-    }
-  },
-  carouselProp: {
+    height: '60vh',
+    background: theme.palette.mode === 'dark' ? (0,styles_.darken)(theme.palette.primary.light, 0.8) : (0,styles_.lighten)(theme.palette.primary.light, 0.8),
+    position: 'relative',
+    padding: theme.spacing(10, 0),
     [theme.breakpoints.down('lg')]: {
-      display: 'none'
-    },
-    '& div': {
-      width: theme.direction === 'rtl' ? 500 : 300
+      paddingTop: theme.spacing(15)
     }
   },
+  title: {
+    fontSize: '20px'
+  },
+  // carouselHandle: {
+  //   height: 380,
+  //   position: 'relative',
+  //   zIndex: 10
+  // },
+  // carouselWrap: {
+  //   position: 'absolute',
+  //   zIndex: 2,
+  //   width: '100%',
+  //   overflow: 'hidden',
+  // },
+  // item: {
+  //   '&:focus': {
+  //     outline: 'none'
+  //   }
+  // },
+  // carouselProp: {
+  //   [theme.breakpoints.down('lg')]: {
+  //     display: 'none'
+  //   },
+  //   '& div': {
+  //     width: theme.direction === 'rtl' ? 500 : 300
+  //   }
+  // },
   floatingTitle: {
     position: 'absolute',
     width: '100%',
     left: 0,
-    top: theme.spacing(5),
+    top: theme.spacing(10),
     [theme.breakpoints.up('lg')]: {
       left: theme.spacing(3),
       top: theme.spacing(-10)
@@ -2396,137 +2498,56 @@ const useStyles = (0,mui_.makeStyles)({
       }
     }
   },
-  arrow: {
-    direction: theme.direction === 'rtl' ? 'rtl' : 'ltr',
-    marginTop: theme.direction === 'rtl' ? 160 : 140,
-    right: theme.direction === 'rtl' ? 160 : 0,
-    position: 'relative',
-    zIndex: 10,
-    '& button': {
-      background: theme.palette.background.paper,
-      margin: theme.spacing(0.5),
-      color: theme.palette.mode === 'dark' ? theme.palette.primary.light : theme.palette.primary.dark
-    },
-    [theme.breakpoints.down(1280)]: {
-      display: 'none'
-    },
-    [theme.breakpoints.down('lg')]: {
-      display: 'none',
-      marginTop: 560
-    }
+  // arrow: {
+  //   direction: theme.direction === 'rtl' ? 'rtl' : 'ltr',
+  //   marginTop: theme.direction === 'rtl' ? 160 : 140,
+  //   right: theme.direction === 'rtl' ? 160 : 0,
+  //   position: 'relative',
+  //   zIndex: 10,
+  //   '& button': {
+  //     background: theme.palette.background.paper,
+  //     margin: theme.spacing(0.5),
+  //     color: theme.palette.mode === 'dark' ? theme.palette.primary.light : theme.palette.primary.dark,
+  //   },
+  //   [theme.breakpoints.down(1280)]: {
+  //     display: 'none'
+  //   },
+  //   [theme.breakpoints.down('lg')]: {
+  //     display: 'none',
+  //     marginTop: 560
+  //   },
+  // },
+  // sliderImg: {
+  // width: '300px',
+  //   height: '200px',
+  //   objectFit: 'cover',
+  visionDesc: {
+    margin: '0 auto',
+    width: '50%',
+    textAlign: 'justify',
+    fontWeight: 500,
+    fontSize: 26,
+    paddingTop: '10%',
+    paddingRight: '15%'
   }
 }));
 /* harmony default export */ const services_style = (useStyles);
+// EXTERNAL MODULE: ./components/Title/title-style.js
+var title_style = __webpack_require__(7793);
+// EXTERNAL MODULE: ./components/Parallax/SingleSquare.js
+var SingleSquare = __webpack_require__(8130);
 // EXTERNAL MODULE: ./components/Title/WithIcon.js + 1 modules
 var WithIcon = __webpack_require__(4885);
-// EXTERNAL MODULE: external "@mui/material/Paper"
-var Paper_ = __webpack_require__(1168);
-var Paper_default = /*#__PURE__*/__webpack_require__.n(Paper_);
-// EXTERNAL MODULE: external "@mui/material/Button"
-var Button_ = __webpack_require__(3819);
-var Button_default = /*#__PURE__*/__webpack_require__.n(Button_);
-// EXTERNAL MODULE: external "@mui/material/Typography"
-var Typography_ = __webpack_require__(7163);
-var Typography_default = /*#__PURE__*/__webpack_require__.n(Typography_);
-// EXTERNAL MODULE: ./components/Cards/cards-style.js
-var cards_style = __webpack_require__(6456);
-// EXTERNAL MODULE: external "react/jsx-runtime"
-var jsx_runtime_ = __webpack_require__(997);
-;// CONCATENATED MODULE: ./components/Cards/Default.js
-
-
-
-
-
-
-
-
-function Services(props) {
-  const {
-    classes
-  } = (0,cards_style/* default */.Z)();
-  const {
-    img,
-    title,
-    desc,
-    button
-  } = props;
-  return /*#__PURE__*/(0,jsx_runtime_.jsxs)((Paper_default()), {
-    className: classes.defaultCard,
-    children: [/*#__PURE__*/jsx_runtime_.jsx("figure", {
-      children: /*#__PURE__*/jsx_runtime_.jsx("img", {
-        src: img,
-        alt: "img"
-      })
-    }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
-      className: classes.text,
-      children: [/*#__PURE__*/jsx_runtime_.jsx((Typography_default()), {
-        display: "block",
-        variant: "h6",
-        children: title
-      }), /*#__PURE__*/jsx_runtime_.jsx((Typography_default()), {
-        component: "p",
-        children: desc
-      })]
-    }), /*#__PURE__*/jsx_runtime_.jsx((Button_default()), {
-      variant: "outlined",
-      fullWidth: true,
-      color: "primary",
-      className: classes.button,
-      children: button
-    })]
-  });
-}
-
-/* harmony default export */ const Default = (Services);
-// EXTERNAL MODULE: external "react-scroll-parallax"
-var external_react_scroll_parallax_ = __webpack_require__(7446);
-// EXTERNAL MODULE: ./components/Parallax/parallax-style.js
-var parallax_style = __webpack_require__(628);
-;// CONCATENATED MODULE: ./components/Parallax/Dots.js
-
-
-
-
-function ParallaxDots() {
-  const {
-    classes,
-    cx
-  } = (0,parallax_style/* default */.Z)();
-  return /*#__PURE__*/jsx_runtime_.jsx("div", {
-    className: cx(classes.parallaxWrap, classes.dotsWrap),
-    children: /*#__PURE__*/jsx_runtime_.jsx(external_react_scroll_parallax_.ParallaxProvider, {
-      children: /*#__PURE__*/jsx_runtime_.jsx("div", {
-        className: classes.innerParallax,
-        children: /*#__PURE__*/jsx_runtime_.jsx(external_react_scroll_parallax_.Parallax, {
-          translateY: [-50, 50],
-          className: "figure",
-          children: /*#__PURE__*/jsx_runtime_.jsx("svg", {
-            fill: "#cccccc",
-            width: 902,
-            height: 1042,
-            className: classes.parallaxDot,
-            children: /*#__PURE__*/jsx_runtime_.jsx("use", {
-              xlinkHref: "/images/decoration/dot-deco.svg#dot"
-            })
-          })
-        })
-      })
-    })
-  });
-}
 ;// CONCATENATED MODULE: ./components/Services/Services.js
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-
-
-
+ // import useMediaQuery from '@mui/material/useMediaQuery';
+// import { useTheme } from '@mui/material/styles';
+// import Container from '@mui/material/Container';
+// import Fab from '@mui/material/Fab';
+// import Carousel from 'react-slick';
+// import PrevIcon from '@mui/icons-material/ArrowBack';
+// import NextIcon from '@mui/icons-material/ArrowForward';
+// import { useTranslation } from 'next-i18next';
+// import imgApi from 'public/images/imgAPI';
 
 
 
@@ -2537,139 +2558,77 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
+ // import TitleIcon from '../Title/WithIcon';
+// import Card from '../Cards/Default';
+// import DotsParallax from '../Parallax/Dots';
 
-const servicesList = [{
-  title: 'Lorem Ipsum',
-  desc: 'Proin ac arcu nisl. Duis eu molestie lectus. Nam quis mauris faucibus, aliquet elit eu, rhoncus ipsum.',
-  img: imgAPI/* default.agency.2 */.Z.agency[2]
+
+
+
+const items = [{
+  image: imgAPI/* default.services.0 */.Z.services[0]
 }, {
-  title: 'Etiam rhoncus',
-  desc: 'Proin quis pellentesque dui. Ut sed leo neque. Nullam aliquet iaculis neque a commodo.',
-  img: imgAPI/* default.agency.3 */.Z.agency[3]
+  image: imgAPI/* default.services.1 */.Z.services[1]
 }, {
-  title: 'Duis fermentum',
-  desc: 'Quisque consectetur lectus vel orci porttitor gravida ac eu erat. Nullam accumsan nibh tortor.',
-  img: imgAPI/* default.agency.4 */.Z.agency[4]
+  image: imgAPI/* default.services.2 */.Z.services[2]
 }, {
-  title: 'Lorem Ipsum',
-  desc: 'Proin ac arcu nisl. Duis eu molestie lectus. Nam quis mauris faucibus, aliquet elit eu, rhoncus ipsum.',
-  img: imgAPI/* default.agency.2 */.Z.agency[2]
+  image: imgAPI/* default.services.3 */.Z.services[3]
+}, {
+  image: imgAPI/* default.services.4 */.Z.services[4]
 }];
 
-function Services_Services() {
+function Services() {
   const {
     t
   } = (0,external_next_i18next_.useTranslation)('common');
-  const theme = (0,styles_.useTheme)();
-  const isDesktop = useMediaQuery_default()(theme.breakpoints.up('lg'));
   const {
-    classes
+    classes,
+    cx
   } = services_style();
-  const slider = (0,external_react_.useRef)(null);
-  const settings = {
-    dots: false,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 4,
-    arrows: false,
-    slidesToScroll: 1,
-    variableWidth: true,
-    responsive: [{
-      breakpoint: 1100,
-      settings: {
-        slidesToShow: 3
-      }
-    }, {
-      breakpoint: 800,
-      settings: {
-        slidesToShow: 2
-      }
-    }, {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1
-      }
-    }]
-  };
-  (0,external_react_.useEffect)(() => {
-    if (theme.direction === 'ltr' && window.innerWidth > 1200) {
-      const limit = window.innerWidth > 1400 ? 3 : 2;
-      const lastSlide = Math.floor(servicesList.length - limit);
-      slider.current.slickGoTo(lastSlide);
-    }
-  }, []);
+  const {
+    classes: title
+  } = (0,title_style/* default */.Z)();
+  const {
+    classes: text
+  } = (0,common/* useText */.XK)();
   return /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
-    className: classes.root,
-    children: [/*#__PURE__*/jsx_runtime_.jsx(ParallaxDots, {}), /*#__PURE__*/jsx_runtime_.jsx("div", {
-      className: classes.carouselHandle,
-      children: /*#__PURE__*/jsx_runtime_.jsx("div", {
-        className: classes.carouselWrap,
-        children: /*#__PURE__*/(0,jsx_runtime_.jsxs)((external_react_slick_default()), _objectSpread(_objectSpread({
-          ref: slider
-        }, settings), {}, {
-          children: [isDesktop && /*#__PURE__*/jsx_runtime_.jsx("div", {
-            className: classes.item,
-            children: /*#__PURE__*/jsx_runtime_.jsx("div", {
-              className: classes.carouselProp,
-              children: /*#__PURE__*/jsx_runtime_.jsx("div", {})
-            })
-          }), servicesList.map((item, index) => /*#__PURE__*/jsx_runtime_.jsx("div", {
-            className: classes.item,
-            children: /*#__PURE__*/jsx_runtime_.jsx(Default, {
-              title: item.title,
-              desc: item.desc,
-              img: item.img,
-              button: t('agency-landing.services_button')
-            })
-          }, index.toString())), isDesktop && /*#__PURE__*/jsx_runtime_.jsx("div", {
-            className: classes.item,
-            children: /*#__PURE__*/jsx_runtime_.jsx("div", {
-              className: classes.carouselProp,
-              children: /*#__PURE__*/jsx_runtime_.jsx("div", {})
-            })
-          })]
-        }))
-      })
-    }), /*#__PURE__*/jsx_runtime_.jsx("div", {
-      className: classes.floatingTitle,
-      children: /*#__PURE__*/jsx_runtime_.jsx((Container_default()), {
-        fixed: true,
-        children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+    children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+      className: classes.root,
+      children: [/*#__PURE__*/jsx_runtime_.jsx(SingleSquare/* default */.Z, {}), /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+        className: classes.floatingTitle,
+        children: [/*#__PURE__*/jsx_runtime_.jsx("div", {
           className: classes.title,
-          children: [/*#__PURE__*/jsx_runtime_.jsx(WithIcon/* default */.Z, {
+          children: /*#__PURE__*/jsx_runtime_.jsx(WithIcon/* default */.Z, {
             text: t('agency-landing.services_title'),
-            icon: "apps",
+            icon: /*#__PURE__*/jsx_runtime_.jsx((BarChart_default()), {
+              sx: {
+                fontSize: 100
+              }
+            }),
             extended: true,
-            class: "titleservice"
-          }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("nav", {
-            className: classes.arrow,
-            children: [/*#__PURE__*/jsx_runtime_.jsx((Fab_default()), {
-              size: "small",
-              onClick: () => slider.current.slickNext(),
-              "aria-label": "prev",
-              className: classes.margin,
-              children: /*#__PURE__*/jsx_runtime_.jsx((ArrowBack_default()), {})
-            }), /*#__PURE__*/jsx_runtime_.jsx((Fab_default()), {
-              size: "small",
-              onClick: () => slider.current.slickPrev(),
-              "aria-label": "next",
-              className: classes.margin,
-              children: /*#__PURE__*/jsx_runtime_.jsx((ArrowForward_default()), {})
-            })]
-          })]
-        })
+            className: "titleservice"
+          })
+        }), /*#__PURE__*/jsx_runtime_.jsx((Typography_default()), {
+          className: cx(classes.visionDesc),
+          variant: "body1",
+          children: t('agency-landing.services_desc')
+        })]
+      })]
+    }), /*#__PURE__*/jsx_runtime_.jsx("div", {
+      children: /*#__PURE__*/jsx_runtime_.jsx(components_AutoPlayCarousel, {
+        items: items
       })
     })]
   });
 }
 
-/* harmony default export */ const components_Services_Services = (Services_Services);
+/* harmony default export */ const Services_Services = (Services);
 ;// CONCATENATED MODULE: ./components/Services/index.js
 
 
 /***/ }),
 
-/***/ 2358:
+/***/ 2955:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -2689,9 +2648,9 @@ var styles_ = __webpack_require__(8442);
 // EXTERNAL MODULE: external "@mui/material/Container"
 var Container_ = __webpack_require__(4475);
 var Container_default = /*#__PURE__*/__webpack_require__.n(Container_);
-// EXTERNAL MODULE: external "react-slick"
-var external_react_slick_ = __webpack_require__(8096);
-var external_react_slick_default = /*#__PURE__*/__webpack_require__.n(external_react_slick_);
+;// CONCATENATED MODULE: external "react-slick"
+const external_react_slick_namespaceObject = require("react-slick");
+var external_react_slick_default = /*#__PURE__*/__webpack_require__.n(external_react_slick_namespaceObject);
 // EXTERNAL MODULE: external "next-i18next"
 var external_next_i18next_ = __webpack_require__(1377);
 // EXTERNAL MODULE: ./public/images/imgAPI.js
@@ -2774,36 +2733,8 @@ function Testimonial(props) {
 /* harmony default export */ const Cards_Testimonial = (Testimonial);
 // EXTERNAL MODULE: ./components/Title/WithIcon.js + 1 modules
 var WithIcon = __webpack_require__(4885);
-// EXTERNAL MODULE: external "react-scroll-parallax"
-var external_react_scroll_parallax_ = __webpack_require__(7446);
-// EXTERNAL MODULE: ./components/Parallax/parallax-style.js
-var parallax_style = __webpack_require__(628);
-;// CONCATENATED MODULE: ./components/Parallax/SingleSquare.js
-
-
-
-
-function SingleSquare() {
-  const {
-    classes,
-    cx
-  } = (0,parallax_style/* default */.Z)();
-  return /*#__PURE__*/jsx_runtime_.jsx("div", {
-    className: classes.parallaxWrap,
-    children: /*#__PURE__*/jsx_runtime_.jsx(external_react_scroll_parallax_.ParallaxProvider, {
-      children: /*#__PURE__*/jsx_runtime_.jsx("div", {
-        className: cx(classes.testi, classes.innerParallax),
-        children: /*#__PURE__*/jsx_runtime_.jsx(external_react_scroll_parallax_.Parallax, {
-          translateY: [10, 30],
-          className: "figure",
-          children: /*#__PURE__*/jsx_runtime_.jsx("div", {
-            className: cx(classes.parallaxSquare, classes.parallaxSecondarySingle)
-          })
-        })
-      })
-    })
-  });
-}
+// EXTERNAL MODULE: ./components/Parallax/SingleSquare.js
+var SingleSquare = __webpack_require__(8130);
 // EXTERNAL MODULE: external "tss-react/mui"
 var mui_ = __webpack_require__(6508);
 ;// CONCATENATED MODULE: ./components/Testimonials/testi-style.js
@@ -2993,7 +2924,7 @@ function Testimonials() {
   }, []);
   return /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
     className: classes.root,
-    children: [/*#__PURE__*/jsx_runtime_.jsx(SingleSquare, {}), /*#__PURE__*/jsx_runtime_.jsx("div", {
+    children: [/*#__PURE__*/jsx_runtime_.jsx(SingleSquare/* default */.Z, {}), /*#__PURE__*/jsx_runtime_.jsx("div", {
       className: classes.carousel,
       children: /*#__PURE__*/(0,jsx_runtime_.jsxs)((external_react_slick_default()), _objectSpread(_objectSpread({
         ref: slider
@@ -3217,7 +3148,7 @@ const titleStyles = (0,tss_react_mui__WEBPACK_IMPORTED_MODULE_0__.makeStyles)({
       width: 120,
       position: 'relative',
       textTransform: 'capitalize',
-      fontSize: 45,
+      fontSize: 35,
       fontWeight: 700,
       lineHeight: '62px',
       [theme.breakpoints.up('lg')]: {
@@ -3226,14 +3157,14 @@ const titleStyles = (0,tss_react_mui__WEBPACK_IMPORTED_MODULE_0__.makeStyles)({
         paddingLeft: 20
       },
       [theme.breakpoints.up('md')]: {
-        paddingTop: 40,
+        paddingTop: 30,
         marginTop: theme.spacing(10)
       },
       [theme.breakpoints.only('md')]: {
         marginLeft: theme.spacing(7)
       },
       [theme.breakpoints.down('lg')]: {
-        fontSize: 38,
+        fontSize: 30,
         lineHeight: '50px'
       },
       [theme.breakpoints.down('md')]: {
@@ -3772,13 +3703,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var components_VideoBanner__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(3286);
 /* harmony import */ var components_Parallax_Square__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(7670);
 /* harmony import */ var components_About__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(6584);
-/* harmony import */ var components_Services__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(6594);
-/* harmony import */ var components_Testimonials__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(2358);
+/* harmony import */ var components_Services__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(4599);
+/* harmony import */ var components_Testimonials__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(2955);
 /* harmony import */ var components_Expertise__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(2701);
 /* harmony import */ var components_CaseStudies__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(8870);
 /* harmony import */ var components_CallAction__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(338);
 /* harmony import */ var components_MapAddress__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(4675);
-/* harmony import */ var components_PageNav__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(4934);
+/* harmony import */ var components_PageNav__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(7551);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(997);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__);
 var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([components_MainContainer__WEBPACK_IMPORTED_MODULE_8__]);
@@ -3808,6 +3739,17 @@ components_MainContainer__WEBPACK_IMPORTED_MODULE_8__ = (__webpack_async_depende
 
 
 
+const items = [{
+  image: 'image1.jpg'
+}, {
+  image: 'image2.jpg'
+}, {
+  image: 'image3.jpg'
+}, {
+  image: 'image4.jpg'
+}, {
+  image: 'image5.jpg'
+}];
 
 const sectionMargin = margin => margin * 20;
 
@@ -3887,7 +3829,9 @@ function Landing(props) {
           }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx("section", {
             className: classes.spaceTop,
             id: "services",
-            children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx(components_Services__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .Z, {})
+            children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx(components_Services__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .Z, {
+              items: items
+            })
           }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx("section", {
             className: isTablet ? classes.spaceTopShort : classes.spaceTop,
             id: "our-expertise",
@@ -3938,7 +3882,8 @@ const imgAPI = {
   agency: [// header , parallax style
   'https://via.placeholder.com/964x723/1071ef/FFFFFF', '/images/aboutus.png', // '/images/logos/VeronaLogo.png',
   '/images/caseStudies/Real-Estate-Projects.webp', '/images/caseStudies/Entertainment-Projects.webp', '/images/caseStudies/Educational-Projects.webp', '/images/caseStudies/Tourism-Projects.webp', '/images/caseStudies/Agricultural-Projects.webp', '/images/caseStudies/Technological-Projects.webp', '/images/caseStudies/Industrial-Projects.webp' // '/images/caseStudies/Agricultural-Projects.webp',
-  ]
+  ],
+  services: ['/images/slider/image-1.png', '/images/slider/image-4.png', '/images/slider/image-3.png', '/images/slider/image-4.png', '/images/slider/image-5.png', '/images/slider/image-3.png']
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (imgAPI);
 
@@ -4082,14 +4027,6 @@ module.exports = require("@mui/material/Container");
 
 "use strict";
 module.exports = require("@mui/material/CssBaseline");
-
-/***/ }),
-
-/***/ 3661:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("@mui/material/Fab");
 
 /***/ }),
 
@@ -4506,14 +4443,6 @@ module.exports = require("react-scroll-parallax");
 
 "use strict";
 module.exports = require("react-scrollspy");
-
-/***/ }),
-
-/***/ 8096:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("react-slick");
 
 /***/ }),
 

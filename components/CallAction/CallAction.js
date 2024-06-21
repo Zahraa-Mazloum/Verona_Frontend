@@ -39,9 +39,9 @@ function CallAction() {
                 <Typography variant="h4" gutterBottom display="block">
                   {t('agency-landing.cta_title')}
                 </Typography>
-                <Typography display="block" component="div">
+                {/* <Typography display="block" component="div">
                   {t('agency-landing.cta_subtitle')}
-                </Typography>
+                </Typography> */}
               </Grid>
               <Grid item md={3} xs={12}>
                 <Grid container alignItems="center">

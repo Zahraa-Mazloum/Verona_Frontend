@@ -41,6 +41,14 @@ const imgAPI = {
     '/images/caseStudies/Industrial-Projects.webp',
     // '/images/caseStudies/Agricultural-Projects.webp',
   ],
+  services: [
+    '/images/slider/image-1.png',
+    '/images/slider/image-4.png',
+    '/images/slider/image-3.png',
+    '/images/slider/image-4.png',
+    '/images/slider/image-5.png',
+    '/images/slider/image-3.png'
+  ]
 };
 
 export default imgAPI;

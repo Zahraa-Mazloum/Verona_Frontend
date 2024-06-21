@@ -50,7 +50,7 @@ const titleStyles = makeStyles({ uniqId: 'title' })((theme, _params, classes) =>
       width: 120,
       position: 'relative',
       textTransform: 'capitalize',
-      fontSize: 45,
+      fontSize: 35,
       fontWeight: 700,
       lineHeight: '62px',
       [theme.breakpoints.up('lg')]: {
@@ -59,14 +59,14 @@ const titleStyles = makeStyles({ uniqId: 'title' })((theme, _params, classes) =>
         paddingLeft: 20,
       },
       [theme.breakpoints.up('md')]: {
-        paddingTop: 40,
+        paddingTop: 30,
         marginTop: theme.spacing(10),
       },
       [theme.breakpoints.only('md')]: {
         marginLeft: theme.spacing(7)
       },
       [theme.breakpoints.down('lg')]: {
-        fontSize: 38,
+        fontSize: 30,
         lineHeight: '50px'
       },
       [theme.breakpoints.down('md')]: {

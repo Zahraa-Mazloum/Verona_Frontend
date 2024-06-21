@@ -73,8 +73,7 @@ const headerStyles = makeStyles({ uniqId: 'header' })((theme, _params, classes) 
           color: theme.palette.text.primary,
         },
         '& img': {
-          height: 40,
-          width: 100,
+          width: 150,
         }
       },
       [`& .${classes.bar}`]: {

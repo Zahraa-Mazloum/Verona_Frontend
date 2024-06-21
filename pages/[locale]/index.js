@@ -23,6 +23,14 @@ import MapAddress from 'components/MapAddress';
 import PageNav from 'components/PageNav';
 // import Notification from 'components/Notification';
 
+const items = [
+  { image: 'image1.jpg' },
+  { image: 'image2.jpg' },
+  { image: 'image3.jpg' },
+  { image: 'image4.jpg' },
+  { image: 'image5.jpg' },
+];
+
 const sectionMargin = margin => (margin * 20);
 const useStyles = makeStyles({ uniqId: 'home' })(theme => ({
   mainWrap: {
@@ -95,7 +103,7 @@ function Landing(props) {
               <About />
             </section>
             <section className={classes.spaceTop} id="services">
-              <Services />
+              <Services items={items} />
             </section>
             <section className={isTablet ? classes.spaceTopShort : classes.spaceTop} id="our-expertise">
               <Expertise />

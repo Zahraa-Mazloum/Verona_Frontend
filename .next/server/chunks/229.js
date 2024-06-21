@@ -993,8 +993,7 @@ const headerStyles = (0,tss_react_mui__WEBPACK_IMPORTED_MODULE_0__.makeStyles)({
           color: theme.palette.text.primary
         },
         '& img': {
-          height: 40,
-          width: 100
+          width: 150
         }
       },
       [`& .${classes.bar}`]: {
