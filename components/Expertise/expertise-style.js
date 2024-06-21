@@ -133,6 +133,9 @@ const useStyles = makeStyles({ uniqId: 'expertise' })((theme, _params, classes) 
 
     }
   },
+  expTitle: {
+    fontSize: '20px',
+  }
 }));
 
 export default useStyles;

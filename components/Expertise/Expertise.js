@@ -65,7 +65,7 @@ function Expertise() {
                     <use xlinkHref="/images/agency/wave_decoration.svg#main" />
                   </svg>
                 )}
-                <TitleDeco text={t('agency-landing.expertise_title')} />
+                <TitleDeco text={t('agency-landing.expertise_title')} className={classes.expTitle} />
                 {loaded && isDesktop && (
                   <ScrollAnimation
                     animateOnce

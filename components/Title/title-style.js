@@ -47,11 +47,12 @@ const titleStyles = makeStyles({ uniqId: 'title' })((theme, _params, classes) =>
     '& h3': {
       fontFamily: 'Roboto Condensed',
       color: theme.palette.common.white,
-      width: 120,
+      width: 140,
       position: 'relative',
       textTransform: 'capitalize',
-      fontSize: 35,
-      fontWeight: 700,
+      fontSize: 30,
+      fontWeight: 800,
+      textAlign: 'center',
       lineHeight: '62px',
       [theme.breakpoints.up('lg')]: {
         height: 160,
