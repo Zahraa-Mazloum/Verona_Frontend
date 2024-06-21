@@ -2288,11 +2288,10 @@ const parallaxStyles = (0,tss_react_mui__WEBPACK_IMPORTED_MODULE_0__.makeStyles)
   },
   parallaxPrimary: {
     background: `url(${public_images_imgAPI__WEBPACK_IMPORTED_MODULE_1__/* ["default"].agency[1] */ .Z.agency[1]}) no-repeat`,
-    width: 500,
-    height: 500,
+    width: 405,
+    height: 405,
     // opacity: 0.08,
-    borderRadius: 80,
-    paddingBottom: '5%'
+    borderRadius: 80
   },
   parallaxSecondary: {
     background: theme.palette.secondary.main,
@@ -2439,8 +2438,6 @@ var common = __webpack_require__(4486);
 ;// CONCATENATED MODULE: external "@mui/icons-material/BarChart"
 const BarChart_namespaceObject = require("@mui/icons-material/BarChart");
 var BarChart_default = /*#__PURE__*/__webpack_require__.n(BarChart_namespaceObject);
-// EXTERNAL MODULE: external "@mui/material/Grid"
-var Grid_ = __webpack_require__(5612);
 // EXTERNAL MODULE: external "@mui/material/Typography"
 var Typography_ = __webpack_require__(7163);
 var Typography_default = /*#__PURE__*/__webpack_require__.n(Typography_);
@@ -2545,7 +2542,7 @@ const useStyles = (0,mui_.makeStyles)({
     fontWeight: 500,
     fontSize: 26,
     paddingTop: '10%',
-    paddingRight: '15%'
+    paddingRight: '25%'
   }
 }));
 /* harmony default export */ const services_style = (useStyles);
@@ -2565,7 +2562,6 @@ var WithIcon = __webpack_require__(4885);
 // import NextIcon from '@mui/icons-material/ArrowForward';
 // import { useTranslation } from 'next-i18next';
 // import imgApi from 'public/images/imgAPI';
-
 
 
 
@@ -2626,7 +2622,7 @@ function Services() {
             className: "titleservice"
           })
         }), /*#__PURE__*/jsx_runtime_.jsx((Typography_default()), {
-          className: cx(classes.visionDesc),
+          className: cx(classes.visionDesc, text.subtitle),
           variant: "body1",
           children: t('agency-landing.services_desc')
         })]
@@ -3900,7 +3896,7 @@ const imgAPI = {
   'https://via.placeholder.com/964x723/1071ef/FFFFFF', '/images/aboutus.png', // '/images/logos/VeronaLogo.png',
   '/images/caseStudies/Real-Estate-Projects.webp', '/images/caseStudies/Entertainment-Projects.webp', '/images/caseStudies/Educational-Projects.webp', '/images/caseStudies/Tourism-Projects.webp', '/images/caseStudies/Agricultural-Projects.webp', '/images/caseStudies/Technological-Projects.webp', '/images/caseStudies/Industrial-Projects.webp' // '/images/caseStudies/Agricultural-Projects.webp',
   ],
-  services: ['/images/slider/image-1.png', '/images/slider/image-4.png', '/images/slider/image-3.png', '/images/slider/image-4.png', '/images/slider/image-5.png', '/images/slider/image-3.png']
+  services: ['/images/slider/image-1.png', '/images/slider/image-4.png', '/images/slider/image-3.png', '/images/slider/image-5.png', '/images/slider/image-2.png']
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (imgAPI);
 

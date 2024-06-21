@@ -13,7 +13,6 @@ import imgAPI from 'public/images/imgAPI';
 import { useTranslation } from 'next-i18next';
 import { useText } from 'theme/common';
 import BarChartIcon from '@mui/icons-material/BarChart';
-import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import useStyles from './services-style';
 import useTitle from '../Title/title-style';
@@ -29,7 +28,6 @@ const items = [
   { image: imgAPI.services[2] },
   { image: imgAPI.services[3] },
   { image: imgAPI.services[4] },
-
 ];
 function Services() {
   const { t } = useTranslation('common');
@@ -51,7 +49,7 @@ function Services() {
               className="titleservice"
             />
           </div>
-          <Typography className={cx(classes.visionDesc)} variant="body1">
+          <Typography className={cx(classes.visionDesc, text.subtitle)} variant="body1">
             {t('agency-landing.services_desc')}
           </Typography>
         </div>

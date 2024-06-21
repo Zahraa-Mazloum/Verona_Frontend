@@ -1,4 +1,4 @@
-import { alpha, lighten, darken } from '@mui/material/styles';
+import {lighten, darken } from '@mui/material/styles';
 import { makeStyles } from 'tss-react/mui';
 
 const useStyles = makeStyles({ uniqId: 'services' })((theme, _params, classes) => ({
@@ -93,7 +93,7 @@ const useStyles = makeStyles({ uniqId: 'services' })((theme, _params, classes) =
     fontWeight: 500,
     fontSize: 26,
     paddingTop: '10%',
-    paddingRight: '15%'
+    paddingRight: '25%'
   }
 }));
 

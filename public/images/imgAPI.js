@@ -45,9 +45,8 @@ const imgAPI = {
     '/images/slider/image-1.png',
     '/images/slider/image-4.png',
     '/images/slider/image-3.png',
-    '/images/slider/image-4.png',
     '/images/slider/image-5.png',
-    '/images/slider/image-3.png'
+    '/images/slider/image-2.png',
   ]
 };
 

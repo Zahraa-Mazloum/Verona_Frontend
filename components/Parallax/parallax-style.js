@@ -57,11 +57,10 @@ const parallaxStyles = makeStyles({ uniqId: 'parallax' })((theme, _params, class
   },
   parallaxPrimary: {
       background: `url(${imgAPI.agency[1]}) no-repeat`,
-      width: 500,
-      height: 500,
+      width: 405,
+      height: 405,
     // opacity: 0.08,
     borderRadius: 80,
-    paddingBottom: '5%'
   },
   parallaxSecondary: {
     background: theme.palette.secondary.main,
