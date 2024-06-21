@@ -123,16 +123,12 @@ function Footer(props) {
         item: true,
         xs: 12,
         md: 3,
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsxs)("div", {
+        children: [/*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx("div", {
           className: classes.logo,
-          children: [/*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx("img", {
+          children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx("img", {
             src: (public_images_logos_VeronaLogo_png__WEBPACK_IMPORTED_MODULE_14___default()),
             alt: "logo"
-          }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx((_mui_material_Typography__WEBPACK_IMPORTED_MODULE_10___default()), {
-            variant: "h6",
-            color: "textPrimary",
-            children: (public_text_brand__WEBPACK_IMPORTED_MODULE_15___default().agency.projectName)
-          })]
+          })
         }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx((_mui_material_Typography__WEBPACK_IMPORTED_MODULE_10___default()), {
           color: "textPrimary",
           className: classes.footerDesc,
@@ -320,7 +316,7 @@ const footerStyles = (0,tss_react_mui__WEBPACK_IMPORTED_MODULE_0__.makeStyles)({
     },
     '& img': {
       filter: 'grayscale(1) contrast(0.5) brightness(1.5)',
-      width: 48,
+      width: 150,
       marginRight: theme.spacing()
     },
     '& h6': {

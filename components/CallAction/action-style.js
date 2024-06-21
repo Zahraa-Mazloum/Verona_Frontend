@@ -14,11 +14,23 @@ const useStyles = makeStyles({ uniqId: 'cta' })((theme) => ({
     position: 'absolute',
     transform: 'scale(3)'
   },
-  button: {
+  btncontainer: {
+    display: 'flex',
+    gap: '2px',
+    background: '#f16c21',
+    borderRadius: 25,
+    transition: 'background-color 0.3s ease',
+    textAlign: 'center',
+    textDecoration: 'none',
+    paddingTop: '7%',
+    width: '100%',
+    '&:hover': {
+      backgroundColor: '#743410',
+    },
     [theme.breakpoints.up('md')]: {
       width: 240,
       height: 64,
-      fontSize: 18,
+      fontSize: 20,
     },
     [theme.breakpoints.down('lg')]: {
       margin: '0 auto'
@@ -43,6 +55,7 @@ const useStyles = makeStyles({ uniqId: 'cta' })((theme) => ({
     },
     '& h4': {
       fontWeight: 700,
+      fontSize: 28,
       color: theme.palette.mode === 'dark' ? theme.palette.secondary.light : theme.palette.secondary.dark,
       fontFamily: 'Roboto Condensed',
       [theme.breakpoints.down('md')]: {
@@ -62,8 +75,19 @@ const useStyles = makeStyles({ uniqId: 'cta' })((theme) => ({
     }
   },
   rightIcon: {
-    marginLeft: theme.spacing(),
-    transform: theme.direction === 'rtl' ? 'rotate(180deg)' : 'none'
+    transform: theme.direction === 'rtl' ? 'rotate(180deg)' : 'none',
+    fontSize: '20px',
+    color: 'white',
+    textAlign: 'center',
+    marginTop: '3%',
+    marginLeft: '3%',
+
+  },
+  btninv: {
+textDecoration: 'none',
+color: 'white',
+paddingLeft: '5px'
+
   }
 }));
 

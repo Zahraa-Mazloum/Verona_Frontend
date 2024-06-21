@@ -65,9 +65,6 @@ function Footer(props) {
         <Grid item xs={12} md={3}>
           <div className={classes.logo}>
             <img src={logo} alt="logo" />
-            <Typography variant="h6" color="textPrimary">
-              {brand.agency.projectName}
-            </Typography>
           </div>
           <Typography color="textPrimary" className={classes.footerDesc} gutterBottom>
             {t('agency-landing.footer_paragraph')}

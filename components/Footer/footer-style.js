@@ -49,7 +49,7 @@ const footerStyles = makeStyles({ uniqId: 'footer' })((theme, _params, classes) 
     },
     '& img': {
       filter: 'grayscale(1) contrast(0.5) brightness(1.5)',
-      width: 48,
+      width: 150,
       marginRight: theme.spacing(),
     },
     '& h6': {

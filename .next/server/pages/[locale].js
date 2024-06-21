@@ -529,17 +529,11 @@ __webpack_require__.d(__webpack_exports__, {
 
 // EXTERNAL MODULE: external "react"
 var external_react_ = __webpack_require__(6689);
-// EXTERNAL MODULE: external "@mui/material/useMediaQuery"
-var useMediaQuery_ = __webpack_require__(9868);
-var useMediaQuery_default = /*#__PURE__*/__webpack_require__.n(useMediaQuery_);
-// EXTERNAL MODULE: external "@mui/material/styles"
-var styles_ = __webpack_require__(8442);
 // EXTERNAL MODULE: external "@mui/material/Typography"
 var Typography_ = __webpack_require__(7163);
 var Typography_default = /*#__PURE__*/__webpack_require__.n(Typography_);
 // EXTERNAL MODULE: external "@mui/material/Button"
 var Button_ = __webpack_require__(3819);
-var Button_default = /*#__PURE__*/__webpack_require__.n(Button_);
 // EXTERNAL MODULE: external "@mui/material/Container"
 var Container_ = __webpack_require__(4475);
 var Container_default = /*#__PURE__*/__webpack_require__.n(Container_);
@@ -560,6 +554,8 @@ var text_link = __webpack_require__(69);
 var Link = __webpack_require__(1482);
 // EXTERNAL MODULE: external "tss-react/mui"
 var mui_ = __webpack_require__(6508);
+// EXTERNAL MODULE: external "@mui/material/styles"
+var styles_ = __webpack_require__(8442);
 ;// CONCATENATED MODULE: ./components/CallAction/action-style.js
 
 
@@ -578,11 +574,23 @@ const useStyles = (0,mui_.makeStyles)({
     position: 'absolute',
     transform: 'scale(3)'
   },
-  button: {
+  btncontainer: {
+    display: 'flex',
+    gap: '2px',
+    background: '#f16c21',
+    borderRadius: 25,
+    transition: 'background-color 0.3s ease',
+    textAlign: 'center',
+    textDecoration: 'none',
+    paddingTop: '7%',
+    width: '100%',
+    '&:hover': {
+      backgroundColor: '#743410'
+    },
     [theme.breakpoints.up('md')]: {
       width: 240,
       height: 64,
-      fontSize: 18
+      fontSize: 20
     },
     [theme.breakpoints.down('lg')]: {
       margin: '0 auto'
@@ -607,6 +615,7 @@ const useStyles = (0,mui_.makeStyles)({
     },
     '& h4': {
       fontWeight: 700,
+      fontSize: 28,
       color: theme.palette.mode === 'dark' ? theme.palette.secondary.light : theme.palette.secondary.dark,
       fontFamily: 'Roboto Condensed',
       [theme.breakpoints.down('md')]: {
@@ -626,8 +635,17 @@ const useStyles = (0,mui_.makeStyles)({
     }
   },
   rightIcon: {
-    marginLeft: theme.spacing(),
-    transform: theme.direction === 'rtl' ? 'rotate(180deg)' : 'none'
+    transform: theme.direction === 'rtl' ? 'rotate(180deg)' : 'none',
+    fontSize: '20px',
+    color: 'white',
+    textAlign: 'center',
+    marginTop: '3%',
+    marginLeft: '3%'
+  },
+  btninv: {
+    textDecoration: 'none',
+    color: 'white',
+    paddingLeft: '5px'
   }
 })); // TODO jss-to-tss-react codemod: usages of this hook outside of this file will not be converted.
 
@@ -635,8 +653,8 @@ const useStyles = (0,mui_.makeStyles)({
 // EXTERNAL MODULE: external "react/jsx-runtime"
 var jsx_runtime_ = __webpack_require__(997);
 ;// CONCATENATED MODULE: ./components/CallAction/CallAction.js
-
-
+ // import useMediaQuery from '@mui/material/useMediaQuery';
+// import { useTheme } from '@mui/material/styles';
 
 
 
@@ -653,9 +671,9 @@ var jsx_runtime_ = __webpack_require__(997);
 
 function CallAction() {
   // Theme breakpoints
-  const theme = (0,styles_.useTheme)();
-  const isDesktop = useMediaQuery_default()(theme.breakpoints.up('md')); // Translation Function
-
+  // const theme = useTheme();
+  // const isDesktop = useMediaQuery(theme.breakpoints.up('md'));
+  // Translation Function
   const {
     t
   } = (0,external_next_i18next_.useTranslation)('common');
@@ -696,14 +714,13 @@ function CallAction() {
               children: /*#__PURE__*/jsx_runtime_.jsx((Grid_default()), {
                 container: true,
                 alignItems: "center",
-                children: /*#__PURE__*/(0,jsx_runtime_.jsxs)((Button_default()), {
-                  component: Link/* default */.Z,
-                  size: "large",
-                  variant: "outlined",
-                  color: "secondary",
-                  href: text_link/* default.agency.contact */.Z.agency.contact,
-                  className: classes.button,
-                  children: [t('agency-landing.cta_btn'), /*#__PURE__*/jsx_runtime_.jsx((Send_default()), {
+                children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+                  className: classes.btncontainer,
+                  children: [/*#__PURE__*/jsx_runtime_.jsx("a", {
+                    href: "#",
+                    className: classes.btninv,
+                    children: t('agency-landing.btn_inv')
+                  }), /*#__PURE__*/jsx_runtime_.jsx((Send_default()), {
                     className: classes.rightIcon
                   })]
                 })
