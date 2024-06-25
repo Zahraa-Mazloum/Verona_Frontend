@@ -47,13 +47,13 @@ const titleStyles = makeStyles({ uniqId: 'title' })((theme, _params, classes) =>
     '& h3': {
       fontFamily: 'Roboto Condensed',
       color: theme.palette.common.white,
-      width: 140,
+      width: 250,
       position: 'relative',
       textTransform: 'capitalize',
-      fontSize: 30,
+      fontSize: 28,
       fontWeight: 800,
-      textAlign: 'center',
-      lineHeight: '62px',
+      textAlign: 'left',
+      lineHeight: '70px',
       [theme.breakpoints.up('lg')]: {
         height: 160,
         marginLeft: theme.spacing(3),
@@ -103,14 +103,22 @@ const titleStyles = makeStyles({ uniqId: 'title' })((theme, _params, classes) =>
     },
     '&:before': {
       content: '""',
+      background: '#ffffff',
       width: 480,
       height: 480,
-      background: theme.palette.mode === 'dark' ? theme.palette.background.default : theme.palette.background.paper,
+      // background: theme.palette.mode === 'dark' ? theme.palette.background.default : theme.palette.background.paper,
       borderRadius: 24,
       transform: 'rotate(45deg)',
       position: 'absolute',
       top: theme.spacing(15),
-      right: theme.spacing(10),
+      right: theme.spacing(1),
+      [theme.breakpoints.down('1500')]: {
+        width: 380,
+        height: 380,
+      },
+      [theme.breakpoints.down('lg')]: {
+        display: 'none'
+      },
       [theme.breakpoints.down('md')]: {
         display: 'none'
       }
@@ -120,26 +128,34 @@ const titleStyles = makeStyles({ uniqId: 'title' })((theme, _params, classes) =>
         boxShadow: `-30px 20px 0px 0px ${theme.palette.mode === 'dark' ? theme.palette.secondary.dark : theme.palette.secondary.light}`
       }
     },
-    '& h3': {
-      color: theme.palette.mode === 'dark' ? theme.palette.primary.light : theme.palette.primary.dark,
-      fontWeight: 700,
-      textTransform: 'capitalize',
-      fontFamily: 'Roboto Condensed',
-      lineHeight: '62px',
-      position: 'relative',
-      width: 200,
-      fontSize: 48,
-      [theme.breakpoints.down('lg')]: {
-        fontSize: 38,
-        lineHeight: '50px',
-        width: '100%',
-        textAlign: 'center',
-      },
-      [theme.breakpoints.down('sm')]: {
-        fontSize: 32,
-        lineHeight: '42px',
-      }
-    }
+   '& h3': {
+    color: theme.palette.mode === 'dark' ? theme.palette.primary.light : theme.palette.primary.dark,
+    fontWeight: 700,
+  textTransform: 'capitalize',
+  fontFamily: 'Roboto Condensed',
+  lineHeight: '62px',
+  position: 'relative',
+  width: 500,
+  fontSize: 48,
+  textAlign: 'left',
+  [theme.breakpoints.down('1500')]: {
+    fontSize: 35,
+  },
+  [theme.breakpoints.down('lg')]: {
+    fontSize: 38,
+    lineHeight: '50px',
+    width: '100%',
+    textAlign: 'center',
+  },
+  [theme.breakpoints.down('md')]: {
+    fontSize: 32,
+    lineHeight: '42px',
+  },
+  [theme.breakpoints.down('sm')]: {
+    fontSize: 32,
+    lineHeight: '42px',
+  }
+}
   },
   icon: {
     position: 'relative',

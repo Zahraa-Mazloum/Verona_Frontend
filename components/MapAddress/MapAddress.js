@@ -8,9 +8,8 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import EmailIcon from '@mui/icons-material/Email';
-import PhoneIcon from '@mui/icons-material/LocalPhone';
 import LocationIcon from '@mui/icons-material/LocationOn';
-import { Map, Marker, GoogleApiWrapper } from 'google-maps-react18';
+import { Map, Marker } from 'google-maps-react18';
 import { useTranslation } from 'next-i18next';
 import useStyles from './map-address-style';
 import TitleDeco from '../Title/WithDecoration';
@@ -38,8 +37,6 @@ MapContainer.propTypes = {
   google: PropTypes.object.isRequired
 };
 
-const MapWithAMarker = GoogleApiWrapper({ apiKey: null })(MapContainer);
-
 function MapAdress() {
   // Theme breakpoints
   const theme = useTheme();
@@ -64,60 +61,24 @@ function MapAdress() {
                 offset={-100}
                 delay={200}
                 duration={0.3}
-              >
-                <Paper className={classes.paper}>
-                  <Typography variant="h6" display="block">
-                    {t('agency-landing.office_head')}
-                  </Typography>
-                  <Grid container>
-                    <Grid item sm={6} xs={12}>
-                      <EmailIcon className={classes.icon} />
-                      info@veronaai
-                    </Grid>
-                    <Grid item xs={12}>
-                      <LocationIcon className={classes.icon} />
-                      Abu Dhabi, UAE
-                    </Grid>
-                  </Grid>
-                </Paper>
-              </ScrollAnimation>
-              {/* <ScrollAnimation
-                animateOnce
-                animateIn="fadeInLeftShort"
-                offset={-100}
-                delay={500}
-                duration={0.3}
-              >
-                <Paper className={classes.paper}>
-                  <Typography variant="h6" display="block">
-                    {t('agency-landing.office_branch')}
-                  </Typography>
-                  <Grid container>
-                    <Grid item sm={6} xs={12}>
-                      <PhoneIcon className={classes.icon} />
-                      +98 765 432 10
-                    </Grid>
-                    <Grid item sm={6} xs={12}>
-                      <EmailIcon className={classes.icon} />
-                      hello@luxi.com
-                    </Grid>
-                    <Grid item xs={12}>
-                      <LocationIcon className={classes.icon} />
-                      Lorem ipsum street Block C - Vestibullum Building
-                    </Grid>
-                  </Grid>
-                </Paper>
-              </ScrollAnimation> */}
+              />
             </div>
           </Grid>
           <Grid item md={6} xs={12}>
-            <Paper className={classes.map} elevation={10}>
-              <MapWithAMarker
-                googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
-                loadingElement={<div style={{ height: '100%' }} />}
-                containerElement={<div style={{ height: '700px' }} />}
-                mapElement={<div style={{ height: '100%' }} />}
-              />
+            <Paper className={classes.paper}>
+              <Typography variant="h6" display="block">
+                {t('agency-landing.office_head')}
+              </Typography>
+              <Grid container>
+                <Grid item sm={6} xs={12}>
+                  <EmailIcon className={classes.icon} />
+                  info@verona.ai
+                </Grid>
+                <Grid item xs={12}>
+                  <LocationIcon className={classes.icon} />
+                  Abu Dhabi, UAE
+                </Grid>
+              </Grid>
             </Paper>
           </Grid>
         </Grid>

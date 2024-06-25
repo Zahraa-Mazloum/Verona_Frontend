@@ -114,9 +114,8 @@ const useStyles = makeStyles({ uniqId: 'expertise' })((theme, _params, classes) 
     borderColor: '#f16c21',
     borderRadius: 15,
     '&:hover': {
-      background: '#f3a64a',
-      color: 'black',
-      borderColor: 'white',
+      background: 'linear-gradient(45deg, #f78e35, #f16c21)',
+      boxShadow: '0 4px 15px rgba(0, 0, 0, 0.2)',
 
     }
   },
@@ -127,9 +126,8 @@ const useStyles = makeStyles({ uniqId: 'expertise' })((theme, _params, classes) 
     borderColor: theme.palette.primary.main,
     borderRadius: 15,
     '&:hover': {
-      background: '#f3a64a',
-      color: 'black',
-      borderColor: 'white',
+      background: 'linear-gradient(45deg, #f78e35, #f16c21)',
+      boxShadow: '0 4px 15px rgba(0, 0, 0, 0.2)',
 
     }
   },

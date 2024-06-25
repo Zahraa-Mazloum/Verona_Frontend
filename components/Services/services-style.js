@@ -12,6 +12,7 @@ const useStyles = makeStyles({ uniqId: 'services' })((theme, _params, classes) =
       paddingTop: theme.spacing(15),
     }
   },
+
   title: {
     fontSize: '20px',
   },
@@ -48,8 +49,9 @@ const useStyles = makeStyles({ uniqId: 'services' })((theme, _params, classes) =
       left: theme.spacing(3),
       top: theme.spacing(-10),
     },
-    [theme.breakpoints.up(1400)]: {
+    [theme.breakpoints.down(1500)]: {
       left: theme.spacing(10),
+
     },
     [`& .${classes.title}`]: {
       [theme.breakpoints.up('md')]: {
@@ -99,7 +101,12 @@ const useStyles = makeStyles({ uniqId: 'services' })((theme, _params, classes) =
       width: '100%',
       paddingRight: 0,
       textAlign: 'center'
-
+    },
+    [theme.breakpoints.down('lg')]: {
+      fontSize: 16,
+      width: '70%',
+      paddingRight: 0,
+      textAlign: 'justify'
     },
     [theme.breakpoints.down('md')]: {
       fontSize: 16,

@@ -17,15 +17,17 @@ const useStyles = makeStyles({ uniqId: 'cta' })((theme) => ({
   btncontainer: {
     display: 'flex',
     gap: '2px',
-    background: '#f16c21',
+    background: 'linear-gradient(45deg, #f16c21, #f78e35)',
     borderRadius: 25,
-    transition: 'background-color 0.3s ease',
+    transition: 'background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease',
     textAlign: 'center',
     textDecoration: 'none',
     paddingTop: '7%',
     width: '100%',
     '&:hover': {
-      backgroundColor: '#743410',
+      background: 'linear-gradient(45deg, #f78e35, #f16c21)',
+      boxShadow: '0 4px 15px rgba(0, 0, 0, 0.2)',
+      transform: 'scale(1.05)',
     },
     [theme.breakpoints.up('md')]: {
       width: 240,
@@ -84,10 +86,9 @@ const useStyles = makeStyles({ uniqId: 'cta' })((theme) => ({
 
   },
   btninv: {
-textDecoration: 'none',
-color: 'white',
-paddingLeft: '5px'
-
+    textDecoration: 'none',
+    color: 'white',
+    paddingLeft: '5px'
   }
 }));
 

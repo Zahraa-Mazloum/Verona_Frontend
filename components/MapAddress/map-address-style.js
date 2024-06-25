@@ -16,6 +16,8 @@ const useStyles = makeStyles({ uniqId: 'map' })((theme) => ({
     }
   },
   paper: {
+    marginTop: '15%',
+    marginLeft: '-30%',
     padding: theme.spacing(3, 5),
     marginBottom: theme.spacing(4),
     [theme.breakpoints.down('md')]: {
@@ -29,19 +31,6 @@ const useStyles = makeStyles({ uniqId: 'map' })((theme) => ({
     top: theme.spacing(),
     position: 'relative'
   },
-  map: {
-    background: '#dedede',
-    overflow: 'hidden',
-    position: 'relative',
-    width: '100%',
-    height: 700,
-    [theme.breakpoints.up('md')]: {
-      marginTop: theme.spacing(10),
-    },
-    [theme.breakpoints.down('md')]: {
-      marginTop: theme.spacing(-6),
-    }
-  }
 }));
 
 // TODO jss-to-tss-react codemod: usages of this hook outside of this file will not be converted.

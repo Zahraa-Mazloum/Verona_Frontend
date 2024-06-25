@@ -102,7 +102,7 @@ function VideoBanner() {
                   {t('agency-landing.banner_title')}
                 </Typography>
               </div>
-              <Typography className={cx(classes.subtitle, text.subtitle, '  Bsubtitle')} variant="h5">
+              <Typography className={cx(classes.subtitle, text.subtitle, 'Bsubtitle')} variant="h5">
                 {t('agency-landing.banner_subtitle')}
               </Typography>
               {/* <Button variant="outlined" size="large" color="secondary" className={classes.button}>

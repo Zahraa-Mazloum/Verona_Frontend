@@ -3,7 +3,7 @@ module.exports = {
     name: 'Verona',
     desc: 'Verona Invesments - React Single Landing Page Template',
     prefix: 'luxiren',
-    footerText: 'Verona Invesments - All Rights Reserved 2021',
+    footerText: 'Verona Invesments - All Rights Reserved 2024',
     logoText: 'Verona Invesments',
     projectName: 'Verona Invesments',
     url: 'luxireact.ux-maestro.com/agency',

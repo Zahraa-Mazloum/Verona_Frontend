@@ -35,6 +35,9 @@ const parallaxStyles = makeStyles({ uniqId: 'parallax' })((theme, _params, class
     width: '100%',
     position: 'absolute',
     display: 'block',
+    [theme.breakpoints.down('1500')]: {
+      display: 'none'
+    },
     '& [class="figure"]': {
       height: '100vh',
       width: '100%',

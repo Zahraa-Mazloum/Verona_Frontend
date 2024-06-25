@@ -71,31 +71,11 @@ function CaseStudies() {
   // Translation Function
   const { t } = useTranslation('common');
 
-  // Image Gallery
-  // const [photoIndex, setPhotoIndex] = useState(0);
-  // const [open, setOpen] = useState(false);
+
 
   const { classes } = useStyles();
   const { classes: title } = useTitle();
-  // const [selectedIndex, setSelectedIndex] = useState('corporate');
 
-  // function handleListItemClick(event, index) {
-  //   console.log(index);
-  //   setSelectedIndex(index);
-  // }
-
-  // function onMovePrevRequest() {
-  //   setPhotoIndex((photoIndex + caseData.length - 1) % caseData.length);
-  // }
-
-  // function onMoveNextRequest() {
-  //   setPhotoIndex((photoIndex + caseData.length + 1) % caseData.length);
-  // }
-
-  // function showPopup(index) {
-  //   setOpen(true);
-  //   setPhotoIndex(index);
-  // }
 
   const renderCard = (item, index) => (
     <CaseCard
@@ -110,16 +90,6 @@ function CaseStudies() {
 
   return (
     <div className={classes.root}>
-      {/* {open && (
-        <Lightbox
-          mainSrc={caseData[photoIndex].bg || caseData[photoIndex].logo}
-          nextSrc={caseData[(photoIndex + 1) % caseData.length].bg || caseData[(photoIndex + 1) % caseData.length].logo}
-          prevSrc={caseData[(photoIndex + 1) % caseData.length].logo || null}
-          onCloseRequest={() => setOpen(false)}
-          onMovePrevRequest={onMovePrevRequest}
-          onMoveNextRequest={onMoveNextRequest}
-        />
-      )} */}
       <Container fixed={isDesktop}>
         <Grid container spacing={5}>
           <Grid item md={3} xs={12}>
