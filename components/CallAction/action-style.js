@@ -83,12 +83,26 @@ const useStyles = makeStyles({ uniqId: 'cta' })((theme) => ({
     textAlign: 'center',
     marginTop: '3%',
     marginLeft: '3%',
+    [theme.breakpoints.down('md')]: {
+      fontSize: 18,
+      marginBottom: theme.spacing(3),
+      textAlign: 'center',
+      marginTop: '1%',
+
+
+    },
 
   },
   btninv: {
     textDecoration: 'none',
     color: 'white',
-    paddingLeft: '5px'
+    paddingLeft: '5px',
+      [theme.breakpoints.down('md')]: {
+        fontSize: 18,
+        marginBottom: theme.spacing(3),
+        textAlign: 'center',
+        paddingLeft: '20%'
+      },
   }
 }));
 
