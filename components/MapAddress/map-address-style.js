@@ -21,7 +21,9 @@ const useStyles = makeStyles({ uniqId: 'map' })((theme) => ({
     padding: theme.spacing(3, 5),
     marginBottom: theme.spacing(4),
     [theme.breakpoints.down('md')]: {
-      padding: theme.spacing(3, 2),
+      padding: theme.spacing(2, 1),
+      marginLeft: '10%',
+      textAlign: 'center'
     }
   },
   icon: {
