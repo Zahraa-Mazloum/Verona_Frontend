@@ -60,7 +60,7 @@ const titleStyles = makeStyles({ uniqId: 'title' })((theme, _params, classes) =>
         paddingLeft: 20,
       },
       [theme.breakpoints.up('md')]: {
-        paddingTop: 30,
+        paddingTop: 70,
         marginTop: theme.spacing(10),
       },
       [theme.breakpoints.only('md')]: {
