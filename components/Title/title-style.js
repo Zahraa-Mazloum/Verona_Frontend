@@ -54,17 +54,17 @@ const titleStyles = makeStyles({ uniqId: 'title' })((theme, _params, classes) =>
       fontWeight: 800,
       textAlign: 'left',
       lineHeight: '70px',
-      marginLeft: '-2%',
+      marginLeft: '3.5%',
       [theme.breakpoints.up('lg')]: {
         height: 160,
         paddingLeft: 20,
-        marginLeft: '-2%',
+        marginLeft: '3.5%',
 
       },
       [theme.breakpoints.up('md')]: {
         paddingTop: 70,
         marginTop: theme.spacing(10),
-        marginLeft: '-2%',
+        marginLeft: '3.5%',
 
       },
       [theme.breakpoints.only('md')]: {

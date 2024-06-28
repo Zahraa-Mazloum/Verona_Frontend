@@ -4,7 +4,7 @@ import greenBuble from 'public/images/agency/green_buble.png';
 import blueBuble from 'public/images/agency/blue_buble.png';
 import violetBuble from 'public/images/agency/violet_buble.png';
 
-const useStyles = makeStyles({ uniqId: 'expertise' })((theme, _params, classes) => ({
+const useStyles = makeStyles({ uniqId: 'expertise' })((theme) => ({
   root: {
     position: 'relative',
     [theme.breakpoints.down('md')]: {
