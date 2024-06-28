@@ -63,6 +63,7 @@ const useStyles = makeStyles({ uniqId: 'expertise' })((theme, _params, classes) 
     '& span': {
       backgroundSize: '100%',
       position: 'absolute',
+      marginLeft: '-10%',
     },
     '& > div > div': {
       position: 'absolute'
